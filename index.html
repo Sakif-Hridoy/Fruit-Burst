@@ -12,8 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
     <!-- Tailwind and Daisy UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Tailwind Custom Colors -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "primary-color": "#F85559",
+                "text-primary-color": "#121212",
+                "text-secondary-color": "#12121299",
+              },
+            },
+          },
+        };
+      </script>
 
 <style>
     .font-lato{
@@ -27,6 +45,7 @@
 <body class="font-lato">
 
     <header class="container mx-2 md:mx-auto mt-2">
+        <!-- nav section -->
         <div class="navbar md:bg-primary-color md:rounded-3xl">
             <div class="navbar-start">
               <div class="dropdown">
